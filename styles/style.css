@@ -25,12 +25,13 @@ footer {
     display: flex;
     box-sizing: border-box;
     width: 1000px;
-    height: 300px;
+    height: 350px;
     border: 6px;
     padding: 20px;
 }
 
 .side {
+    display: inherit;
     position: absolute;
     right: 300px;
     left: 884px;
@@ -39,10 +40,12 @@ footer {
     background-color: rgb(130, 201, 130);
     padding: 1px;
     flex: 2;
-    height: 300px;
+    height: 350px;
     box-sizing: border-box;
     width: 370px;
     text-align: center;
+    margin: 2px;
+    border: 6px;
 }
 
 .flex-container:not(#mainpart) {
@@ -61,8 +64,9 @@ footer {
 }
 
 .flex-container:not(#r) {
-display: inline-flex;
+display: flex;
 flex-direction: row;
+justify-content: flex-end;
 }
 
 .f2 {
@@ -70,15 +74,15 @@ flex-direction: row;
     border: 6px;
     padding: 20px;
     margin: 20px;
-    width: 200px;
+    width: 300px;
     padding: 20px;
-    height: 130px;
-    flex: 3;
+    height: 100px;
     background-color: rgb(228, 216, 115);
 }
 
 #down{
-    align-self: center;
+    align-self: flex-end;
+    justify-content:left;
 }
 
 article {
